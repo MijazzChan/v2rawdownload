@@ -1,4 +1,4 @@
-v2raypid=$(ps | awk '/[v]2ray -config/{print $1}')
+v2raypid=$(ps | awk '/[v]2bin4 -config/{print $1}')
 
 if [ "$v2raypid" == "" ]; then
     echo "No v2ray running"
